@@ -1,0 +1,1713 @@
+{
+	"info": {
+		"_postman_id": "0fb4c310-f247-4590-b638-9dcc1467cdae",
+		"name": "Ulys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idStatus",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI3MjQ3LCJleHAiOjE2NDI1MzgwNDd9.q2X77ijPdoAum3xTdaFoGG6KiaG-yqGFjRU9thIoYB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI3MjQ3LCJleHAiOjE2NDI1MzgwNDd9.q2X77ijPdoAum3xTdaFoGG6KiaG-yqGFjRU9thIoYB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI3MjQ3LCJleHAiOjE2NDI1MzgwNDd9.q2X77ijPdoAum3xTdaFoGG6KiaG-yqGFjRU9thIoYB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Identification",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/identification/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"identification",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "newPassword",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "lastPassword",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Theme",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idTheme",
+									"value": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Theme",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/theme",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"theme"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tutorial Mode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "isTutorialMode",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/tutorialMode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"tutorialMode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/deleteAccount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"deleteAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History Connection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/historyConnection",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"historyConnection"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Weather",
+			"item": [
+				{
+					"name": "New Weather Settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "countryCode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/weather",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"weather"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather Settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/weather",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"weather"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/weather/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"weather",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tools",
+			"item": [
+				{
+					"name": "Download Image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/download/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"download",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Services",
+			"item": [
+				{
+					"name": "Service",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscribe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQzNjM5MTM5LCJleHAiOjE2NDM2NDk5Mzl9.8DshT2SizF56Qgk4Ivf387yWN6_PxzmmIPe3FhmtdQ8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "action",
+									"value": "sub",
+									"description": "unsub or sub",
+									"type": "text"
+								},
+								{
+									"key": "serviceId",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/services/subscribe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"services",
+								"subscribe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "Weather",
+					"item": [
+						{
+							"name": "Weather Widget",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/dashboard/widget/weather/:idWidget",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"dashboard",
+										"widget",
+										"weather",
+										":idWidget"
+									],
+									"variable": [
+										{
+											"key": "idWidget",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Config Weather Widget",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/dashboard/widget/weather/config/:idWidget",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"dashboard",
+										"widget",
+										"weather",
+										"config",
+										":idWidget"
+									],
+									"variable": [
+										{
+											"key": "idWidget",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Weather config",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idWidget",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "idConfig",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/dashboard/widget/weather/config",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"dashboard",
+										"widget",
+										"weather",
+										"config"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Weather Widget Config",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idConfig",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/dashboard/widget/weather/config/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"dashboard",
+										"widget",
+										"weather",
+										"config",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Widget",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/dashboard/widget",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dashboard",
+								"widget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Widget",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/dashboard/widget",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dashboard",
+								"widget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Widget",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/dashboard/widget/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dashboard",
+								"widget",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "",
+									"description": "{URL}",
+									"type": "text"
+								},
+								{
+									"key": "auth",
+									"value": "",
+									"description": "current = \"local\"",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "twitter",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/twitter/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"twitter",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "spotify",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/spotify/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spotify",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reddit",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/reddit/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reddit",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api",
+			"item": [
+				{
+					"name": "Weather",
+					"item": [
+						{
+							"name": "Current Weather data",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/weather/currentWeather?city=Lille&countryCode=FR&units=metric",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"weather",
+										"currentWeather"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Lille"
+										},
+										{
+											"key": "countryCode",
+											"value": "FR"
+										},
+										{
+											"key": "units",
+											"value": "metric"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "units",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/weather/units",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"weather",
+										"units"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Location",
+					"item": [
+						{
+							"name": "Country",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/location/country?search=PaI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"location",
+										"country"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "PaI"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "city",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/location/cities?iso2=FR&search=paris",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"location",
+										"cities"
+									],
+									"query": [
+										{
+											"key": "iso2",
+											"value": "FR"
+										},
+										{
+											"key": "search",
+											"value": "paris"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Actions-Reactions",
+			"item": [
+				{
+					"name": "Link",
+					"item": [
+						{
+							"name": "Link",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/AR/link",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"AR",
+										"link"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Link",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idAction",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "idReaction",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "paramsAction",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "paramsReaction",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/AR/link",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"AR",
+										"link"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Link by service",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/AR/service/link?idService",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"AR",
+										"service",
+										"link"
+									],
+									"query": [
+										{
+											"key": "idService",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Link Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idAction",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "idReaction",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "paramsAction",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "paramsReaction",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "isActive",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/AR/link/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"AR",
+										"link",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/AR/link/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"AR",
+										"link",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Actions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ1MjgwNTc1LCJleHAiOjE2NDUyOTEzNzV9.yck5rsD2ngS0Rl1rc-LfKotv26J2r9TWhLG0pyVp8Yc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/AR/actions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"AR",
+								"actions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/AR/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"AR",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reactions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQyNTI4Nzc3LCJleHAiOjE2NDI1Mzk1Nzd9.eH_-mYS-RYVHXGOnI2BvvXAvzx13ODcNVsLbtYe_v7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/AR/reactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"AR",
+								"reactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actions by service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/AR/service/actions?idService",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"AR",
+								"service",
+								"actions"
+							],
+							"query": [
+								{
+									"key": "idService",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reactions by service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/AR/service/reactions?idService",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"AR",
+								"service",
+								"reactions"
+							],
+							"query": [
+								{
+									"key": "idService",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
