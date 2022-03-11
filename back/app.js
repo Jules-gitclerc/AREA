@@ -72,7 +72,7 @@ bot.command('start', (ctx) => {
         myGroup.push(ctx.chat)
     ctx.reply('User Save !')
 })
-bot.launch()
+//bot.launch()
 
 require('./bot_discord/app');
 require('./bot_telegram/app')
