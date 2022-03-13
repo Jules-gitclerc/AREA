@@ -1,9 +1,0 @@
-{
-  "settings": {
-    "service": "gmail",
-    "auth": {
-      "user": "ulys.epitech@gmail.com",
-      "pass": "Ulys-Epitech;2024"
-    }
-  }
-}
