@@ -40,13 +40,5 @@ services:
     volumes:
       - apk:/common_volume/apk
 
-  mobile:
-      build:
-        context: ./mobile
-        target: prod
-      volumes:
-        - apk:/common_volume/apk
-
 volumes:
   db-data:
-  apk:
